@@ -1,0 +1,40 @@
+@import '../../style/index.scss';
+
+.home {
+  width: 100vw;
+  height: 100vh;
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60 / $base;
+
+    &-logo {
+      width: 120 / $base;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-content {
+      font-size: 30 / $base;
+      font-weight: bolder;
+      margin-left: 12 / $base;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 80 / $base;
+    flex-wrap: wrap;
+
+    span {
+      flex: 1;
+    }
+  }
+}
