@@ -2,11 +2,18 @@ import { useState } from 'react';
 import './index.scss'
 const RoadMaps = (): JSX.Element => {
   const [itemNum, setItemNum] = useState<any>(null)
+  const [infoItenNum, setInfoItemNum] = useState<any>(null)
   const selectItem = (item: Number) => {
     setItemNum(item)
+    setTimeout(() => {
+      setInfoItemNum(item)
+    }, 500)
   }
   const CloseModel = () => {
-    setItemNum(null)
+    setInfoItemNum(null)
+    setTimeout(() => {
+      setItemNum(null)
+    }, 300)
   }
   return (
     <>
@@ -79,7 +86,7 @@ const RoadMaps = (): JSX.Element => {
                 </div>
               </div>
               <div className={['ord1-listLayout-info', itemNum !== null ? 'openModel' : ''].join(' ')}>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 1 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 1 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
@@ -98,7 +105,7 @@ const RoadMaps = (): JSX.Element => {
                   </div>
                   <div className="exit-item" onClick={CloseModel}></div>
                 </div>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 2 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 2 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
@@ -117,7 +124,7 @@ const RoadMaps = (): JSX.Element => {
                   </div>
                   <div className="exit-item" onClick={CloseModel}></div>
                 </div>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 3 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 3 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
@@ -136,7 +143,7 @@ const RoadMaps = (): JSX.Element => {
                   </div>
                   <div className="exit-item" onClick={CloseModel}></div>
                 </div>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 4 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 4 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
@@ -155,7 +162,7 @@ const RoadMaps = (): JSX.Element => {
                   </div>
                   <div className="exit-item" onClick={CloseModel}></div>
                 </div>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 5 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 5 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
@@ -174,7 +181,7 @@ const RoadMaps = (): JSX.Element => {
                   </div>
                   <div className="exit-item" onClick={CloseModel}></div>
                 </div>
-                <div className={['ord1-listLayout-info-wrapper', itemNum === 6 ? 'active' : ''].join(' ')}>
+                <div className={['ord1-listLayout-info-wrapper', infoItenNum === 6 ? 'active' : ''].join(' ')}>
                   <div className="wrapper-roadmap">
                     <div className="definitive">
                       <div className="margin-bottom">
