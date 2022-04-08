@@ -1,0 +1,417 @@
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234c1f3b075c9aed2606ee4_MSBee-Black.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234bb87919853ee0ef3a441_HelveticaNeue%20BlackCond.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b99169e2651bf1aa17ce_RobotoMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b991da01af4e5dbd6eb0_RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b991f63b342cd86117c3_RobotoMono-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234bb871c0a8d456fca055c_HelveticaNeueBd.ttf') format('truetype'), url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23a36df5079421261f8_HelveticaNeue-Regular.otf') format('opentype'), url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23a36df5079421261f8_HelveticaNeue-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Robotomono';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b9911912cec79a458187_RobotoMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneuebd';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234bb871c0a8d456fca055c_HelveticaNeueBd.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23aecd49dc001c2ba9c_HelveticaNeue-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b2399198530704f35d10_HelveticaNeue-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23af75eceede531f241_HelveticaNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23aa29a2c7917f387a1_HelveticaNeue-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b23a236e67e7c98eacc4_HelveticaNeue-Ultralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helveticaneue';
+  src: url('https://uploads-ssl.webflow.com/6230460fe69db46193961eef/6234b2397422f22095098c80_HelveticaNeue-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.RoadMaps{
+  .ord1{
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    padding:  20px 0;
+    background-color: #101111;
+    color: #fff;
+    font-family: Robotomono,sans-serif;
+    &-wrapper{
+      position: relative;
+      width: 100%;
+      max-width: 80rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &-definitive {
+      width: 100%;
+      max-width: 48rem;
+      margin-bottom: 4rem;
+    }
+    &-title{
+      font-family: Helveticaneue,sans-serif;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+    &-medium{
+      font-family: Robotomono,sans-serif;
+      font-size: 1.125rem;
+      margin: 0;
+    }
+    &-listLayout{
+      position:relative;
+      display:-ms-grid;
+      display:grid;
+      grid-auto-columns:1fr;
+      grid-column-gap:1rem;
+      grid-row-gap:1rem;
+      grid-template-areas:".";
+      // -ms-grid-columns:1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+      grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      // -ms-grid-rows:16rem 1rem 24rem 1rem 16rem;
+      grid-template-rows:16rem 24rem 16rem;
+      border-radius:20px;
+      &-rapper{
+        position: relative;
+        z-index: 100;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        border-radius: 9px;
+        &-text{
+          position: absolute;
+          left: 1.5rem;
+          top: auto;
+          right: auto;
+          bottom: 1rem;
+          h4{
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.3;
+            font-weight: 700;
+            font-family: Helveticaneue,sans-serif;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #efedea;
+          }
+        }
+        &-component{
+          position:relative;
+          width:100%;
+          height:100%;
+          -webkit-box-orient:vertical;
+          -webkit-box-direction:normal;
+          -webkit-flex-direction:column;
+          -ms-flex-direction:column;
+          flex-direction:column;
+          cursor:pointer;
+          .bg {
+            position:absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            z-index:-100;
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-ms-flexbox;
+            display:flex;
+            overflow:hidden;
+            width:100%;
+            height:100%;
+            -webkit-box-pack:center;
+            -webkit-justify-content:center;
+            -ms-flex-pack:center;
+            justify-content:center;
+            background-color:#1d1d20;
+            transition: all linear 0.4s;
+            &-img{
+              width: 100%;
+              height: 100%;
+              background-position: 50% 50%;
+              background-size: auto;
+              opacity: .1;
+              background-repeat: no-repeat;
+              background-position: -30% -30%;
+              background-size: 850px;
+              transition: all linear 0.4s;
+            }
+        }
+        &:hover{
+          .bg{
+            background-color: rgb(254, 54, 63);
+            &-img{
+              opacity: 1;
+            }
+          }
+        }
+      }
+      
+      }
+      .item1{
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+        grid-column-start: span 2;
+        grid-column-end: span 2;
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg1.png);
+          background-position: 15% 45%;
+          background-size: 700px;
+        }
+      }
+      .item2{
+        grid-row-start: span 2;
+        grid-row-end: span 2;
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg2.png);
+          background-position: -30% -30%;
+          background-size: 850px;
+        }
+      }
+      .item3{
+        grid-row-start: span 2;
+        grid-row-end: span 2;
+        grid-column-start: span 2;
+        grid-column-end: span 2;
+
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg3.png);
+          background-position: 45% 100%;
+          background-size: 800px;
+        }
+      }
+      .item4{
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+        grid-column-start: span 2;
+        grid-column-end: span 2;
+
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg4.png);
+          background-position: 45% 15%;
+          background-size: 750px;
+        }
+      }
+      .item5{
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg5.png);
+          background-position: 70% 30%;
+          background-size: 750px;
+        }
+      }
+      .item6{
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+
+        .bg-img{
+          background-image: url(../../assets/images/roadmap/ord1/bg6.png);
+          background-position: 20% 37%;
+          background-size: 750px;
+        }
+      }
+      &-info{
+        position: absolute;
+        left: 0;
+        top: 0;
+        // right: 0;
+        // bottom: 0;
+        z-index: 666;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        border-radius: 9px;
+        background-color: #efedea;
+        color: #101111;
+        grid-column-start: span 1;
+        grid-column-end: span 1;
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+        padding: 4rem;
+        width: 0%;
+        height: 0%;
+        display: none;
+        opacity: 0;
+        transition: all linear .5s;
+        &.openModel{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          opacity: 1;
+        }
+        &-wrapper {
+          display: flex;
+          overflow: auto;
+          align-items: flex-end;
+          opacity: 0;
+          display: none;
+          transition: all linear .3s;
+          &.active{
+            display: flex;
+            opacity: 1;
+          }
+          .wrapper-roadmap{
+            .definitive{
+              width: 100%;
+              min-width: 32rem;
+              max-width: 48rem;
+            }
+            .margin-bottom{
+              margin-bottom: 1.5rem;
+            }
+            .text-size-large{
+              font-family: Helveticaneue,sans-serif;
+              font-size: 1.5rem;
+              text-decoration: none;
+            }
+            .text-size-small{
+              line-height: 1.75;
+              font-weight: 400;
+            }
+            
+          }
+          .imgBox{
+            margin-left: 3rem;
+            .bg{
+              width: 400px;
+              height: 400px;
+              background-image: url(../../assets/images/roadmap/ord1/bg1.png);
+              background-position: 50% 50%;
+              background-size: 140%;
+              background-repeat: no-repeat;
+              opacity: .4;
+              -webkit-filter: invert(100%);
+              filter: invert(100%);
+              &.infoItem1{
+                background-image: url(../../assets/images/roadmap/ord1/bg1.png);
+                background-size: 130%;
+              }
+              &.infoItem2{
+                background-image: url(../../assets/images/roadmap/ord1/info/info2.png);
+                height: 600px;
+                background-size: 180%;
+              }
+              &.infoItem3{
+                background-image: url(../../assets/images/roadmap/ord1/info/info3.png);
+              }
+              &.infoItem4{
+                background-image: url(../../assets/images/roadmap/ord1/info/info4.png);
+                background-position: 50% 40%;
+                background-size: 160%;
+              }
+              &.infoItem5{
+                background-image: url(../../assets/images/roadmap/ord1/bg5.png);
+                background-position: 50% 100%;
+                background-size: 100%;
+              }
+              &.infoItem6{
+                background-image: url(../../assets/images/roadmap/ord1/bg6.png);
+                background-position: 50% 50%;
+                background-size: cover;
+              }
+            }
+          }
+          .exit-item{
+            position: absolute;
+            left: auto;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            width: 3rem;
+            height: 3rem;
+            margin-top: 2rem;
+            margin-right: 2rem;
+            background-image: url(../../assets/images/roadmap/ord1/close_icon.svg);
+            background-position: 50% 50%;
+            background-size: cover;
+            opacity: .8;
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
