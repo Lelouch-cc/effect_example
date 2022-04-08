@@ -3,6 +3,7 @@ import HomePage from "../pages/Home"
 import TypingEffectPage from "../pages/TypingEffect";
 import RoadMaps from "../pages/RoadMap";
 import { RoutesType } from "./types";
+import FooterPage from "../pages/Footer";
 
 export const routes: RoutesType[] = [
   {
@@ -28,5 +29,11 @@ export const routes: RoutesType[] = [
     title: 'roadmaps',
     path: '/roadmaps',
     element: <RoadMaps />
+  },
+  {
+    name: 'footer',
+    title: '页脚',
+    path: '/footer',
+    element: <FooterPage />
   },
 ];

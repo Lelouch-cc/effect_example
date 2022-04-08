@@ -1,0 +1,106 @@
+@import '../../style/index.scss';
+
+@function randomPosition() {
+  $rand-position: random();
+  @return  (-5 + $rand-position * 110) + 0%;
+}
+
+@function randomSize() {
+  $rand-size: random();
+  @return (40 + $rand-size * 80) / $base;
+}
+
+@function randomDistance() {
+  $rand-distance: random();
+  @return (120 + $rand-distance * 80) / $base;
+}
+
+@function randomTime() {
+  $rand-time: random();
+  @return (2 + $rand-time * 2) + 0s;
+}
+
+@function randomDelay() {
+  $rand-delay: random();
+  @return (2 + $rand-delay * 2) + 0s;
+}
+
+.footer {
+  &-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &-placeholder {
+      flex: 1;
+    }
+
+    @for $i from 1 through 128 {
+      .footer-main-wrap-bubbles-item:nth-child(#{$i}) {
+        --position: #{randomPosition()};
+        --size: #{randomSize()};
+        --distance: #{randomDistance()};
+        --time: #{randomTime()};
+        --delay: #{randomDelay()};
+      }
+    }
+
+    &-wrap {
+      --footer-background: #ED5565;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      min-height: 340 / $base;
+
+      &-bubbles {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 16 / $base;
+        background-color: var(--footer-background);
+        filter: url("#blob");
+
+        &-item {
+          position: absolute;
+          left: var(--position, 50%);
+          background-color: var(--footer-background);
+          border-radius: 100%;
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+                     bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          transform:translate(-50%, 100%);
+        }
+      }
+
+      &-content {
+        width: 100%;
+        height: 100%;
+        background-color: var(--footer-background);
+      }
+    }
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width:var(--size, 80 / $base);
+    height:var(--size, 80 / $base);
+  }
+
+  100% {
+    width:0vw;
+    height:0vw;
+  }
+}
+
+@keyframes bubble-move {
+  0% {
+    bottom:-(80 / $base);
+  }
+
+  100% {
+    bottom:var(--distance, 160 / $base);
+  }
+}
